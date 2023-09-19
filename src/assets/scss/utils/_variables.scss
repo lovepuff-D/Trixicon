@@ -1,0 +1,23 @@
+//*** Colors ** //
+:root {
+  --black: #12141D;
+  --white: #FFFFFF;
+}
+
+// Other
+:root {
+  --seek-before-width: 0%;
+  --volume-before-width: 100%;
+  --doc-height: 100%;
+  --header-height: 0px;
+}
+
+// *** Rules for elastic viewport *** //
+// 1 vw on mobile  = 414 / 100  = $mobile(1rem)
+// 1 vw on desktop  = 1536 / 100  = $desktop(1rem)
+// More than 2560px  = 1rem or 16px
+$mobile: 4.14;
+$desktop: 15.36;
+$mobile_media: 414px;
+$tablet_media: 768px;
+$desktop_media: 1536px;

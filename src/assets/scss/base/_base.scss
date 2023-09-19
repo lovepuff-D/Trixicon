@@ -1,0 +1,64 @@
+html {
+  font-size: 1vw;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  scroll-behavior: smooth;
+  position: relative;
+  overflow-x: hidden;
+}
+
+body {
+  position: relative;
+  overflow-x: hidden;
+  
+  /*font-family: Syne, "san-serif", "serif";*/
+  /*font-variant-numeric: lining-nums proportional-nums;*/
+  
+  /*background: var(--white);
+  color: var(--black);*/
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 20px;
+  border: 1px solid transparent;
+  background: var(--g-40);
+}
+
+// Helpers
+.clearfix {
+  overflow: auto;
+  
+  &::after {
+	content: "";
+	clear: both;
+	display: table;
+  }
+}
+
+.over-hidden {
+  overflow: hidden;
+}
+
+.overlay {
+  z-index: -999;
+  visibility: hidden;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  transition: 300ms background ease;
+  background: transparent;
+  
+  &.is-active {
+	background: #00000099;
+	z-index: 10;
+	visibility: visible;
+  }
+}
