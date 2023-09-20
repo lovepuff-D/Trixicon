@@ -3,104 +3,135 @@
   font-style: normal;
 }
 
-@mixin text-light {
-  @include font-setting;
-  font-weight: 300;
-}
-
 @mixin text-regular {
-  @include font-setting;
   font-weight: 400;
 }
 
-@mixin text-medium {
-  @include font-setting;
-  font-weight: 500;
-}
-
 @mixin text-semi-bold {
-  @include font-setting;
   font-weight: 600;
 }
 
-@mixin text-bold {
-  @include font-setting;
-  font-weight: 700;
-}
-
 // Seo Headings
-@mixin seo-heading {
-  font-family: Iskry, "san-serif", "serif";
-}
 
+// h1
 @mixin seo-heading-1-mb {
-  @include seo-heading;
-  @include text-regular;
-  font-size: mobile(38);
-  line-height: mobile(41.8);
-  letter-spacing: mobile(-0.76);
+  font-size: mobile(48);
+  line-height: mobile(52);
 }
 
 @mixin seo-heading-1-tb {
-  @include text-regular;
-  @include seo-heading;
-  font-size: tablet(76);
-  line-height: tablet(82);
-  letter-spacing: normal;
+  font-size: tablet(112);
+  line-height: tablet(100);
 }
 
 @mixin seo-heading-1-dp {
-  @include text-regular;
-  @include seo-heading;
-  font-size: desktop(76);
-  line-height: desktop(82);
-  letter-spacing: normal;
+  font-size: desktop(112);
+  line-height: desktop(100);
 }
 
+// h2
 @mixin seo-heading-2-mb {
-  @include text-regular;
-  @include seo-heading;
-  font-size: mobile(32);
-  line-height: mobile(35.2);
-  letter-spacing: -2%;
+  font-size: mobile(36);
+  line-height: mobile(40);
 }
 
 @mixin seo-heading-2-tb {
-  @include text-regular;
-  @include seo-heading;
-  font-size: tablet(48);
-  line-height: tablet(62);
-  letter-spacing: normal;
+  font-size: tablet(52);
+  line-height: tablet(56);
 }
 
 @mixin seo-heading-2-dp {
-  @include text-regular;
-  @include seo-heading;
-  font-size: desktop(48);
-  line-height: desktop(62);
-  letter-spacing: normal;
+  font-size: desktop(52);
+  line-height: desktop(56);
 }
 
+// h3
 @mixin seo-heading-3-mb {
-  @include text-regular;
-  @include seo-heading;
-  font-size: mobile(26);
-  line-height: mobile(28.6);
-  letter-spacing: -2%;
+  font-size: mobile(28);
+  line-height: mobile(32);
 }
 
 @mixin seo-heading-3-tb {
-  @include text-regular;
-  @include seo-heading;
   font-size: tablet(36);
-  line-height: tablet(48);
-  letter-spacing: normal;
+  line-height: tablet(44);
+  letter-spacing: tablet(0.32);
 }
 
 @mixin seo-heading-3-dp {
-  @include text-regular;
-  @include seo-heading;
   font-size: desktop(36);
-  line-height: desktop(48);
-  letter-spacing: normal;
+  line-height: desktop(44);
+  letter-spacing: desktop(0.32);
+}
+
+//
+@mixin r-18-mb {
+  font-size: mobile(18);
+  line-height: mobile(20);
+}
+
+@mixin r-18-tb {
+  font-size: tablet(18);
+  line-height: tablet(20);
+}
+
+@mixin r-18-dp {
+  font-size: desktop(18);
+  line-height: desktop(20);
+}
+
+//
+@mixin r-20-mb {
+  font-size: mobile(20);
+  line-height: mobile(28);
+}
+
+@mixin r-20-tb {
+  font-size: tablet(20);
+  line-height: tablet(28);
+}
+
+@mixin r-20-dp {
+  font-size: desktop(20);
+  line-height: desktop(28);
+}
+
+//
+@mixin b-16-mb {
+  @include text-semi-bold;
+  font-size: mobile(16);
+  line-height: mobile(24);
+}
+
+@mixin b-16-tb {
+  @include text-semi-bold;
+  font-size: tablet(16);
+  line-height: tablet(24);
+}
+
+@mixin b-16-dp {
+  @include text-semi-bold;
+  font-size: desktop(16);
+  line-height: desktop(24);
+}
+
+//
+@mixin b-18-mb {
+  @include text-semi-bold;
+  font-size: mobile(18);
+  line-height: mobile(28);
+  letter-spacing: mobile(0.20);
+}
+
+@mixin b-18-tb {
+  @include text-semi-bold;
+  font-size: tablet(18);
+  line-height: tablet(28);
+  letter-spacing: tablet(0.20);
+}
+
+@mixin b-18-dp {
+  @include text-semi-bold;
+  font-size: desktop(18);
+  line-height: desktop(28);
+  letter-spacing: desktop(0.20);
 }

@@ -12,3 +12,17 @@
 	max-width: desktop(1368);
   }
 }
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: mobile(100);
+  
+  @media screen and (min-width: $tablet_media) {
+	gap: tablet(120);
+  }
+  
+  @media screen and (min-width: $desktop_media) {
+	gap: desktop(120);
+  }
+}
