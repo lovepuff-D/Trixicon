@@ -2,7 +2,6 @@ document.documentElement.style.setProperty('--header-height', document.querySele
 
 
 const resizeObserver = new ResizeObserver((entries) => {
-  console.log(entries[0].target.clientHeight)
   document.documentElement.style.setProperty('--header-height', entries[0].target.clientHeight + 'px');
 });
 

@@ -15,6 +15,9 @@
 @import "src/assets/scss/animations/easing";
 @import "src/assets/scss/animations/keyframe";
 
+// Layout
+@import "src/assets/scss/layout/layout";
+
 // Components
 @import "src/assets/scss/components/pagination";
 @import "src/assets/scss/components/accordion";
@@ -30,5 +33,3 @@
 @import "src/assets/scss/components/slider";
 @import "src/assets/scss/components/widgets";
 
-// Layout
-@import "src/assets/scss/layout/layout";

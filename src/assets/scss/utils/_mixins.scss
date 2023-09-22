@@ -7,76 +7,111 @@
   font-weight: 400;
 }
 
-@mixin text-semi-bold {
-  font-weight: 600;
+@mixin text-medium {
+  font-weight: 500;
+}
+
+@mixin family-golos {
+  font-family: GolosText, "san-serif", "serif";
+}
+
+@mixin family-clash-grotesk {
+  font-family: ClashGrotesk, "san-serif", "serif";
 }
 
 // Seo Headings
 
 // h1
 @mixin seo-heading-1-mb {
+  @include family-clash-grotesk;
   font-size: mobile(48);
   line-height: mobile(52);
 }
 
 @mixin seo-heading-1-tb {
+  @include family-clash-grotesk;
   font-size: tablet(112);
   line-height: tablet(100);
+  letter-spacing: tablet(-2);
 }
 
 @mixin seo-heading-1-dp {
+  @include family-clash-grotesk;
   font-size: desktop(112);
   line-height: desktop(100);
+  letter-spacing: desktop(-2);
 }
 
 // h2
 @mixin seo-heading-2-mb {
+  @include family-clash-grotesk;
   font-size: mobile(36);
   line-height: mobile(40);
 }
 
 @mixin seo-heading-2-tb {
+  @include family-clash-grotesk;
   font-size: tablet(52);
   line-height: tablet(56);
 }
 
 @mixin seo-heading-2-dp {
+  @include family-clash-grotesk;
   font-size: desktop(52);
   line-height: desktop(56);
 }
 
 // h3
 @mixin seo-heading-3-mb {
+  @include family-clash-grotesk;
   font-size: mobile(28);
   line-height: mobile(32);
 }
 
 @mixin seo-heading-3-tb {
+  @include family-clash-grotesk;
   font-size: tablet(36);
   line-height: tablet(44);
   letter-spacing: tablet(0.32);
 }
 
 @mixin seo-heading-3-dp {
+  @include family-clash-grotesk;
   font-size: desktop(36);
   line-height: desktop(44);
   letter-spacing: desktop(0.32);
 }
 
 //
+@mixin r-16-mb {
+  font-size: mobile(16);
+  line-height: mobile(24);
+}
+
+@mixin r-16-tb {
+  font-size: tablet(16);
+  line-height: tablet(24);
+}
+
+@mixin r-16-dp {
+  font-size: desktop(16);
+  line-height: desktop(24);
+}
+
+//
 @mixin r-18-mb {
   font-size: mobile(18);
-  line-height: mobile(20);
+  line-height: mobile(24);
 }
 
 @mixin r-18-tb {
   font-size: tablet(18);
-  line-height: tablet(20);
+  line-height: tablet(24);
 }
 
 @mixin r-18-dp {
   font-size: desktop(18);
-  line-height: desktop(20);
+  line-height: desktop(24);
 }
 
 //
@@ -96,41 +131,63 @@
 }
 
 //
+@mixin r-30-mb {
+  font-size: mobile(30);
+  line-height: mobile(40);
+}
+
+@mixin r-30-tb {
+  font-size: tablet(30);
+  line-height: tablet(40);
+}
+
+@mixin r-30-dp {
+  font-size: desktop(30);
+  line-height: desktop(40);
+}
+
+//
 @mixin b-16-mb {
-  @include text-semi-bold;
+  @include family-clash-grotesk;
+  @include text-medium;
   font-size: mobile(16);
   line-height: mobile(24);
 }
 
 @mixin b-16-tb {
-  @include text-semi-bold;
+  @include family-clash-grotesk;
+  @include text-medium;
   font-size: tablet(16);
   line-height: tablet(24);
 }
 
 @mixin b-16-dp {
-  @include text-semi-bold;
+  @include family-clash-grotesk;
+  @include text-medium;
   font-size: desktop(16);
   line-height: desktop(24);
 }
 
 //
 @mixin b-18-mb {
-  @include text-semi-bold;
+  @include family-clash-grotesk;
+  @include text-medium;
   font-size: mobile(18);
   line-height: mobile(28);
   letter-spacing: mobile(0.20);
 }
 
 @mixin b-18-tb {
-  @include text-semi-bold;
+  @include family-clash-grotesk;
+  @include text-medium;
   font-size: tablet(18);
   line-height: tablet(28);
   letter-spacing: tablet(0.20);
 }
 
 @mixin b-18-dp {
-  @include text-semi-bold;
+  @include family-clash-grotesk;
+  @include text-medium;
   font-size: desktop(18);
   line-height: desktop(28);
   letter-spacing: desktop(0.20);

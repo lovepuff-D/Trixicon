@@ -11,21 +11,29 @@ html {
 body {
   position: relative;
   overflow-x: hidden;
-  background: $g-2;
+  scroll-behavior: smooth;
+  background: $white;
   height: 100%;
+  
+  padding-left: mobile(12);
+  padding-right: mobile(12);
   
   @include font-setting;
   @include text-regular;
-  @include r-20-mb;
-  font-family: Outfit, "san-serif", "serif";
+  @include r-18-mb;
+  font-family: GolosText, "san-serif", "serif";
   color: $black;
   /*font-variant-numeric: lining-nums proportional-nums;*/
   
   @media screen and (min-width: $tablet_media) {
-    @include r-20-tb;
+	@include r-20-tb;
+	padding-left: tablet(12);
+	padding-right: tablet(12);
   }
   @media screen and (min-width: $desktop_media) {
-    @include r-20-dp;
+	@include r-20-dp;
+	padding-left: desktop(12);
+	padding-right: desktop(12);
   }
 }
 
@@ -41,7 +49,7 @@ p {
 ::-webkit-scrollbar-thumb {
   border-radius: 20px;
   border: 1px solid transparent;
-  background: $g-40;
+  background: rgba($black, 0.8);
 }
 
 // Helpers

@@ -1,59 +1,50 @@
 .btn {
-  padding: mobile(14) mobile(24);
-  border-radius: mobile(1000);
+  padding: mobile(12) mobile(24);
+  border-radius: mobile(16);
+  transition: all 300ms;
   
-  @include b-16-mb;
-  
-  &_p_sm {
-	padding: mobile(10) mobile(18);
-  }
+  @include b-18-mb;
 }
 
 @media screen and (min-width: $tablet_media) {
   .btn {
-	padding: tablet(20) tablet(32);
-	border-radius: tablet(1000);
+	padding: tablet(24);
+	border-radius: tablet(16);
 	
-	@include b-16-tb;
-	
-	&_p_sm {
-	  padding: tablet(10) tablet(18);
-	}
+	@include b-18-tb;
   }
 }
 
 @media screen and (min-width: $desktop_media) {
   .btn {
-	padding: desktop(20) desktop(32);
-	border-radius: desktop(1000);
+	padding: desktop(24);
+	border-radius: desktop(16);
 	
-	@include b-16-dp;
-	
-	&_p_sm {
-	  padding: desktop(10) desktop(18);
-	}
+	@include b-18-dp;
   }
 }
 
-.btn_outline_blue {
-  border: mobile(1.5) solid $blue;
-  color: $blue;
-  
-  @media screen and (min-width: $tablet_media) {
-	border-width: tablet(1.5);
-  }
-  
-  @media screen and (min-width: $desktop_media) {
-	border-width: desktop(1.5);
-  }
-}
-
-.btn_blue {
+.btn_bg_blue {
   background-color: $blue;
   color: $white;
+  
+  &:hover {
+	background-color: #293CE1;
+  }
 }
 
-.btn_white {
+.btn_bg_gray {
+  background-color: $gray;
+  
+  &:hover {
+	color: $blue;
+  }
+}
+
+.btn_bg_white {
   background-color: $white;
-  color: $blue;
+  
+  &:hover {
+	color: $blue;
+  }
 }
