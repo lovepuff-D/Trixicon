@@ -63,7 +63,7 @@ body.mobile-menu-is-active {
 	
 	&__burger {
 	  div:first-child {
-		transform: rotate(45deg) translate(0px, -2px);
+		transform: rotate(45deg) translate(0px, mobile(-2));
 	  }
 	  
 	  div:last-child {
